@@ -1,0 +1,166 @@
+header {
+    background-color: #333;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: block;
+  }
+  
+  nav a:hover {
+    background-color: #444;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  td:hover{
+    background-color: #ddd;
+    border-bottom: 1px solid #ddd;
+    
+  }
+  tr{
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  td{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    height: 30px;
+  }
+  th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+
+  }
+  
+  .editField {
+    border: none;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .btn {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+  background-color: #005580;
+  }
+  
+  .btn--success {
+  background-color: #4CAF50;
+  }
+  
+  .btn--success:hover {
+  background-color: #367D39;
+  }
+  
+  .btn--danger {
+  background-color: #000000;
+  }
+  
+  .btn--danger:hover {
+  background-color: #f44336;
+  }
+  
+  .editField {
+  border: none;
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+  }
+  
+  td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center; /* Adicionar alinhamento central */
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  height: 30px;
+  }
+  
+  .btn {
+  display: inline-block; /* Mudar display para inline-block /
+  vertical-align: middle; / Adicionar alinhamento vertical /
+  margin: 0 auto; / Adicionar margem automática */
+  }
