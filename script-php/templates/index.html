@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+<header>
+  <!-- <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Links Importantes</a></li>
+      <li><a href="#services">Cadastro de Hosts</a></li>
+    </ul>
+  </nav> -->
+</header>
+<body>
+  <div class="container">
+    <h1>Lista de dados</h1>
+    
+    <div class="add-section">
+      <h3>Adicionar nova linha</h3>
+      <form>
+        <input type="text" id="add-field1" placeholder="Campo 1">
+        <input type="text" id="add-field2" placeholder="Campo 2">
+        <input type="text" id="add-field3" placeholder="Campo 3">
+        <button class="btn btn--success" onclick="addRow()">Adicionar</button>
+      </form>
+    </div>
+    <table>
+      <thead>
+        <tr>
+            {% for column in columns %}
+            <th>{{ column }}</th>
+            {% endfor %}
+            <th>Opções</th>
+        </tr>
+    </thead>    
+      <tbody>
+        {% for row in data %}
+        <tr id="{{ row[0] }}">
+          <td>{{ row[0] }}</td>
+          <td class="editField" id="campo1_{{ row[0] }}" ondblclick="editField(this)">{{ row[1] }}</td>
+          <td class="editField" id="campo2_{{ row[0] }}" ondblclick="editField(this)">{{ row[2] }}</td>
+          <td class="editField" id="campo3_{{ row[0] }}" ondblclick="editField(this)">{{ row[3] }}</td>
+          <td>
+            <button class="btn btn--success" onclick="updateField({{ row[0] }})">S</button><br><br>
+            <button class="btn btn--danger" onclick="deleteField({{ row[0] }})">E</button>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
